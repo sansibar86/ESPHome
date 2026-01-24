@@ -22,6 +22,10 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
   min_auth_mode: WPA2
+  manual_ip: 
+    static_ip: !secret geekmagic-smalltv_manual_ip_static_ip
+    subnet: !secret subnet
+    gateway: !secret gateway
 
   ap:
     ssid: !secret geekmagic-smalltv_ap_ssid
